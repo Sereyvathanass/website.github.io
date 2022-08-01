@@ -1,0 +1,311 @@
+*{
+    box-sizing: border-box;
+    margin: 5px;
+}
+body{
+    height: 2000px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(resized/24.jpg);
+    background-position: center;
+    background-image: contain;
+    font-family: sans-serif;
+}
+.logo{
+    cursor: pointer;
+}
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #aaa;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+.header .navbar ul{
+    list-style: none;
+
+}
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #bbb;
+    left: 0;
+    bottom: -10px;
+    position: absolute;
+    transition: 0.3s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.header .navbar ul li {
+    display:inline-block;
+    position: relative;
+    
+}
+.header .navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eee;
+}
+.signin{
+    border-radius: 5px;
+    border: 1px solid aqua;
+    padding: 10px;
+    transition: 0.3s;
+}
+.signin:hover{
+    background-color: #aaa;
+}
+.footer{
+    padding: 40px 0;
+    color: white;
+    border-top: 2px solid #aaa;
+    margin-top: 30px;
+}
+.footer img{
+    cursor: pointer;
+}
+.fixed{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 0;
+}
+.imgcontent{
+    width: 15%;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+}
+.imgcontent img{
+    width: 100%;
+}
+.banner{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  
+}
+.banner1{
+    width: 50%;
+    height: 320px;
+    background-color: antiquewhite;
+    background-image: url(resized/11.jpg);
+    background-size: cover;
+    cursor: pointer;
+    
+}
+.banner1, .banner21, .banner31, .banner32, .b1, .b24, .b25, .b31, .b32{
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.banner1:hover, .banner21:hover, .banner31:hover, .banner32:hover, .b1:hover, .b24:hover, .b25:hover, .b31:hover, .b32:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    
+}
+
+.banner2{
+    width: 50%;
+    height: 320px;
+
+}
+.banner21{
+    width: 100%;
+    height: 160px;
+    margin: 0;
+    background-color: black;
+    background-image: url(resized/asd1\ \(3\).jpg);
+    background-size: cover;
+}
+.banner22{
+    display: flex;
+    margin: 0;
+}
+.banner31{
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  px;
+    height: 155px;
+    background-color: darkgreen;
+    margin-right: 5px;
+    margin-left: 0;
+    background-image: url(resized/13.jpg);
+    background-size: cover;
+    
+}
+.banner32{
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  px;
+    height: 155px;
+    background-color: darkgreen;
+    margin-right: 0px;
+    background-image: url(resized/14.jpg);
+    background-size: cover;
+}
+
+.b{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  
+}
+.b1{
+    width: 50%;
+    height: 320px;
+    background-color: antiquewhite;
+    background-image: url(resized/16.jpg);
+    background-size: cover;
+}
+.b2{
+    width: 50%;
+    height: 320px;
+
+}
+.b21{
+    display: flex;
+    margin: 0;
+}
+.b22{
+    height: 155px;
+    display: flex;
+    margin: 0;
+
+}
+.b31{
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  px;
+    height: 155px;
+    background-color: darkgreen;
+    margin: 0;
+    background-image: url(resized/20.jpg);
+    background-size: cover;
+    margin-right: 5px;
+    
+}
+.b32{
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  px;
+    height: 155px;
+    background-color: darkgreen;
+    margin-top: 0;
+    margin-right: 0px;
+    background-image: url(resized/19.jpg);
+    background-size: cover;
+}
+.b24{
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  px;
+    height: 155px;
+    background-color: darkgreen;
+    margin-top: 0;
+    margin-right: 5px;
+    margin-left: 0;
+    background-image: url(resized/17.jpg);
+    background-size: cover;
+}
+.b25{
+    width: 100%;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  px;
+    height: 155px;
+    background-color: darkgreen;
+    margin-right: 0px;
+    margin-top: 0;
+    background-image: url(resized/18.jpg);
+    background-size: cover;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.align1{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width:480px){
+    .banner{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .b{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .banner1{
+        width: 100%;
+    }
+    .banner2{
+        width: 100%;
+    }
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width: 100%;
+    }
+}
+@media (min-width: 481px) and (max-width:767px){
+    .banner{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .b{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .banner1{
+        width: 100%;
+    }
+    .banner2{
+        width: 100%;
+    }
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width:1024px){
+    .banner{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .b{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .banner1{
+        width: 100%;
+        
+    }
+    .banner2{
+        width: 100%;
+        
+    }
+    .b1{
+        width: 100%;
+        
+    }
+    .b2{
+        width: 100%;
+        
+    }
+    .align{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+}
+
+
+
